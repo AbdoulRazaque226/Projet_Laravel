@@ -1,0 +1,104 @@
+/* Centrer toute la page */
+body {
+    font-family: Arial, sans-serif;
+    background: #5341c9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Texte d’intro */
+body > h2, body > p {
+    text-align: center;
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Bloc du formulaire */
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+/* Titre interne */
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Champs du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Bouton */
+form button {
+    background: #2ecc71;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #27ae60;
+}
+
+/* Lien connexion */
+form a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #3498db;
+    font-size: 14px;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.description {
+    font-size: 18px;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+
+}
+    
+

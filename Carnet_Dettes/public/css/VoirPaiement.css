@@ -1,0 +1,137 @@
+/* ====== Conteneur principal ====== */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+}
+
+/* ====== Titre et description ====== */
+.container h1 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.container .description {
+    text-align: center;
+    font-size: 15px;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+/* ====== Carte ====== */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    margin: 30px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    width: 1200px;     /* largeur fixe */
+    max-width: 95%;    /* s’adapte si l’écran est plus petit */
+    padding: 25px 30px;
+}
+
+/* ====== Lignes de détail ====== */
+.detail-row {
+    display: flex;             /* Flexbox pour aligner label + valeur */
+    align-items: flex-start;   /* Aligne en haut si plusieurs lignes */
+    gap: 10px;
+    font-size: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ecf0f1;
+    line-height: 1.6;
+    flex-wrap: wrap;           /* Permet de passer à la ligne si trop long */
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row strong {
+    flex: 0 0 200px;      /* largeur fixe du label */
+    color: #2c3e50;
+}
+
+.detail-row span, 
+.detail-row div {
+    flex: 1;              /* le texte prend toute la largeur restante */
+    color: #34495e;
+}
+
+.detail-row .client {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+/* ====== Boutons ====== */
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+
+.btn-ajouter {
+    background-color: #0391ef;
+    color: #ffffff;
+   width: 85px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.btn-ajouter:hover {
+    background-color: #95a5a6;
+}
+
+
+.btn-primary {
+    background-color: #d9b00c;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 768px) {
+    .detail-row {
+        flex-direction: column;
+    }
+
+    .detail-row strong {
+        flex: none;
+        margin-bottom: 5px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn, .btn-ajouter, .btn-primary {
+        text-align: center;
+        width: 100%;
+    }
+}

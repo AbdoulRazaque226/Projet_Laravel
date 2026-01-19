@@ -1,0 +1,99 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9fafc;
+      color: #222;
+    }
+    
+    .navbar {
+      background: #1e4db7;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 30px;
+     border-radius: 8px;
+
+    }
+    .navbar .left {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .navbar .menu {
+      display: flex;
+      gap: 20px;
+    }
+    .navbar .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .navbar .menu a:hover {
+      text-decoration: underline;
+    }
+
+    
+    .container {
+      padding: 20px;
+      max-width: 1220px;
+    
+    }
+    h1 {
+      margin-bottom: 5px;
+    }
+    p.subtitle {
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+
+    }
+    .card {
+      background: rgb(255, 255, 255);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+    .card-content {
+      flex: 1;
+    }
+    .card h2 {
+      margin: 0;
+      font-size: 28px;
+      color: #111;
+    }
+    .card p {
+      margin: 5px 0 0;
+      color: #666;
+    }
+    .green {
+       color: green;
+       }
+       
+    .red { color: red; }
+    .icon {
+      font-size: 28px;
+      padding: 12px;
+      border-radius: 8px;
+      background: #f0f2f5;
+      margin-left: 15px;
+      color: #1e4db7;
+    }
+    .icon.red {
+      background: #ffecec;
+      color: #d9534f;
+    }
+    .icon.green {
+      background: #eaffea;
+      color: #28a745;
+    }
+  

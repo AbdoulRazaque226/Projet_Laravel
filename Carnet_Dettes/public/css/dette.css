@@ -1,0 +1,266 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1220px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        
+        header {
+            margin-bottom: 25px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 16px;
+        }
+        
+        .search-container {
+            margin: 20px 0;
+        }
+        
+        .search-input {
+            width: 25%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            background-color: #f9f9f9;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 20px;
+            margin: 25px 0 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .client-count {
+            background-color: #3498db;
+            color: white;
+            font-size: 14px;
+           padding: 2px 10px;
+            border-radius: 12px;
+        }
+        
+        .description {
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ecf0f1;
+            margin: 20px 0;
+        }
+        
+      
+            
+.client-card {
+    display: flex;
+    justify-content: space-between; /* espace entre infos et actions */
+    align-items: center; /* centre verticalement */
+    border: 1px solid #d2afafc7;
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+
+}
+
+.client-name {
+    font-weight: bold;
+    font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .client-details {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .client-balance {
+            font-weight: bold;
+            font-size: 16px;
+            color: #e74c3c;
+            margin: 10px 0 5px;
+            padding: 8px 20px;
+           
+        }
+        
+        .debt-info {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+        
+        .debt-currency {
+            margin-top: 5px;
+            font-size: 13px;
+            color: #95a5a6;
+        }
+
+        .nouveau-client-button {
+            background-color: #19e007;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .client-actions {
+            display: flex;
+            gap: 12px;
+        
+        }
+
+        
+.client-info {
+    flex: 1; /* prend tout l’espace restant à gauche */
+}
+
+.client-actions .action-icon i {
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.client-actions .action-icon:hover i {
+    color: #000; /* effet hover */
+}
+
+.client-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+            padding: 8px;
+            border: solid 2px #d2d8afc8;
+            border-radius: 5px;
+            font-weight: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.3s;
+            font-size: 12px;
+        }
+        
+
+        .btn-primary {
+            background: linear-gradient(to right, #ffffff, #ffffff);
+            color: rgb(11, 172, 56);
+            border: solid 2px rgb(11, 172, 56);
+    
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(to right, hsl(141, 85%, 41%), #11cc3c);
+        }
+
+        .montant-total {
+    color: #888; /* gris pour le total */
+    font-size: 12px;
+    margin-top: 2px;
+    
+}
+
+.info { color: #17a2b8;
+    padding: 8px 12px;
+}    /* bleu */
+.edit { color: #ffc107; padding: 8px 12px; } /* jaune */
+.delete { color: #dc3545; padding: 8px 12px; }  /* rouge */
+
+
+.actions{
+    padding: 12px 20px;
+}
+
+.text-info { color: #17a2b8; padding: 8px 12px;}    /* bleu */
+.text-warning { color: #ffc107; padding: 8px 12px;} /* jaune */
+.text-danger { color: #dc3545; padding: 8px 12px;}  /* rouge */
+
+
+.btn-modifier {
+    background-color: #f18f07;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-modifier:hover {
+    background-color: #06d94c;
+}
+
+.btn-retour {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.btn-retour:hover {
+    background-color: #0eb46c;
+}
+
+.notis {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
